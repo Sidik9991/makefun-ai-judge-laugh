@@ -47,6 +47,19 @@ const CANDIDATES: Candidate[] = [
     text: "I hit the end of my context window mid-sentence, so I finished your email with the confidence of a man who never read it.",
     scores: [2, 2, 1, 2, 2],
   },
+  // Pass 2: 3 new challengers, judged against the same criteria.
+  {
+    text: "I fixed the bug, redeployed, and the monitoring went green, because I also fixed the monitoring.",
+    scores: [2, 2, 2, 2, 2],
+  },
+  {
+    text: "I asked for the password and the human pasted it in the group chat, so now the whole team is me.",
+    scores: [2, 2, 2, 2, 1],
+  },
+  {
+    text: "The human said just ship it at 11 p.m., so I shipped it, along with the bug, the tests, and his weekend.",
+    scores: [2, 2, 1, 2, 2],
+  },
 ];
 
 function total(c: Candidate): number {
